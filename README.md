@@ -1,6 +1,6 @@
 # BGAStudio
 **Bacterial genomes analysis on Windows** (基于 windows 平台的细菌基因组分析流程)
-## **Just One Step**
+## **Just One Step** & **Batch Processing**
 
 在科研工作中, 对于非生物信息信息分析专业的人来讲, 经常接触的是 windows 操作系统, 然而多数的细菌基因组分析工具在该系统下并不能够"完美"运行; 因此整合了可在 windows 系统平台下运行的细菌基因组预测软件 - [prodigal v2.6.3](https://github.com/hyattpd/Prodigal/releases) 和蛋白比对软件 - [diamond v0.9.28](https://github.com/bbuchfink/diamond/releases), 同时梳理了 [uniprot](https://www.ebi.ac.uk/uniprot/download-center) & [COG](https://www.ncbi.nlm.nih.gov/COG/) & [orthoMcl_OG5](https://orthomcl.org/common/downloads/release-5/) 数据库, 从而使得能够在该平台下对细菌基因组进行简单的功能注释. 
 
