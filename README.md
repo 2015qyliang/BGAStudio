@@ -28,6 +28,12 @@
 
 ├─07_ResultCOG
 
+├─08_ResultCAZy
+
+├─09_ResultGTDB
+
+├─PhyloAnalysisResult
+
 ├─Database
 
 ├─Lib
