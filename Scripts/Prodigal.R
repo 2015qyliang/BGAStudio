@@ -23,3 +23,5 @@ for (fn in genomeFiles) {
   system(paste0(prodigalComd1, prodigalComd2))
 }
 
+
+
