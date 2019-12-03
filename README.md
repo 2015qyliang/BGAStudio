@@ -12,15 +12,17 @@
 
 **! 需要在 windows 系统中配置 R 语言的编译环境** 以及 **需要配置 python 语言的编译环境 (pip install biopython 安装需要的分析模块)**
 
+---
+
 ### 文献推荐
 
-1 [UBCG: Up-to-date bacterial core gene set and pipeline for phylogenomic tree reconstruction -- 2018](https://www.ncbi.nlm.nih.gov/pubmed/29492869)
+1 [Cultivation and functional characterization of 79 planctomycetes uncovers their unique biology -- 2019](https://doi.org/10.1038/s41564-019-0588-1)
 
 2 [A standardized bacterial taxonomy based on genome phylogeny substantially revises the tree of life -- 2018](https://www.nature.com/articles/nbt.4229)
 
 3 [Recovery of nearly 8,000 metagenome-assembled genomes substantially expands the tree of life -- 2017](https://www.nature.com/articles/s41564-017-0012-7)
 
-4 [Cultivation and functional characterization of 79 planctomycetes uncovers their unique biology -- 2019](https://doi.org/10.1038/s41564-019-0588-1)
+4 [UBCG: Up-to-date bacterial core gene set and pipeline for phylogenomic tree reconstruction -- 2018](https://www.ncbi.nlm.nih.gov/pubmed/29492869)
 
 5 [dbCAN2: a meta server for automated carbohydrate-active enzyme annotation -- 2018](https://academic.oup.com/nar/article/46/W1/W95/4996582)
 
