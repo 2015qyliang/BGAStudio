@@ -15,7 +15,6 @@
 ### 文献推荐
 
 1 [UBCG: Up-to-date bacterial core gene set and pipeline for phylogenomic tree reconstruction](https://www.ncbi.nlm.nih.gov/pubmed/29492869)
-
 2 [A standardized bacterial taxonomy based on genome phylogeny substantially revises the tree of life](https://www.nature.com/articles/nbt.4229)
 
 
