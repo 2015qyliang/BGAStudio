@@ -1,0 +1,15 @@
+ribosomal_protein_L2|
+ribosomal_protein_L3|
+ribosomal_protein_L4|
+ribosomal_protein_L5|
+ribosomal_protein_L6|
+ribosomal_protein_L14|
+ribosomal_protein_L15|
+ribosomal_protein_L16|
+ribosomal_protein_L22|
+ribosomal_protein_L24|
+ribosomal_protein_S3|
+ribosomal_protein_S8|
+ribosomal_protein_S10|
+ribosomal_protein_S17|
+ribosomal_protein_S19|

@@ -1,0 +1,120 @@
+PF00380	30S ribosomal protein S9
+PF00410	30S ribosomal protein S8
+PF00466	50S ribosomal protein L10
+PF01025	Protein GrpE
+PF02576	Ribosome maturation factor RimP
+PF03726	Polyribonucleotide nucleotidyltransferase
+TIGR00006	Ribosomal RNA small subunit methyltransferase H
+TIGR00019	Peptide chain release factor 1
+TIGR00020	Peptide chain release factor 2
+TIGR00029	30S ribosomal protein S20
+TIGR00043	Endoribonuclease YbeY
+TIGR00054	Regulator of sigma-E protease RseP
+TIGR00059	50S ribosomal protein L17
+TIGR00061	50S ribosomal protein L21
+TIGR00064	Signal recognition particle receptor FtsY
+TIGR00065	Cell division protein FtsZ
+TIGR00082	Ribosome-binding factor A
+TIGR00083	Bifunctional riboflavin kinase/FMN adenylyltransferase
+TIGR00084	Holliday junction ATP-dependent DNA helicase RuvA
+TIGR00086	SsrA-binding protein
+TIGR00088	tRNA (guanine-N(1)-)-methyltransferase
+TIGR00090	Ribosomal silencing factor RsfS
+TIGR00092	Obg-like ATPase 1
+TIGR00095	Putative rRNA methyltransferase YlbH
+TIGR00115	Trigger factor
+TIGR00116	Elongation factor Ts
+TIGR00138	Ribosomal RNA small subunit methyltransferase G
+TIGR00158	50S ribosomal protein L9
+TIGR00166	30S ribosomal protein S6
+TIGR00168	Translation initiation factor IF-3
+TIGR00186	Uncharacterized tRNA/rRNA methyltransferase MUL_4155
+TIGR00194	UvrABC system protein C
+TIGR00250	Putative pre-16S rRNA nuclease
+TIGR00337	CTP synthase
+TIGR00344	Alanine--tRNA ligase
+TIGR00362	Chromosomal replication initiator protein DnaA
+TIGR00382	ATP-dependent Clp protease ATP-binding subunit ClpX
+TIGR00392	Isoleucine--tRNA ligase
+TIGR00396	Leucine--tRNA ligase
+TIGR00398	Methionine--tRNA ligase
+TIGR00414	Serine--tRNA ligase
+TIGR00416	DNA repair protein RadA
+TIGR00420	tRNA-specific 2-thiouridylase MnmA
+TIGR00431	tRNA pseudouridine synthase B
+TIGR00435	Cysteine--tRNA ligase CPS1, chloroplastic/mitochondrial
+TIGR00436	GTPase Era
+TIGR00442	Histidine--tRNA ligase
+TIGR00445	Phospho-N-acetylmuramoyl-pentapeptide-transferase
+TIGR00456	Arginine--tRNA ligase
+TIGR00459	Aspartate--tRNA ligase
+TIGR00460	Methionyl-tRNA formyltransferase
+TIGR00468	Phenylalanine--tRNA ligase alpha subunit
+TIGR00472	Phenylalanine--tRNA ligase beta subunit, chloroplastic
+TIGR00487	Translation initiation factor IF-2
+TIGR00496	Ribosome-recycling factor
+TIGR00539	Radical S-adenosyl methionine domain-containing protein 1, mitochondrial
+TIGR00580	Transcription-repair-coupling factor
+TIGR00593	DNA polymerase I
+TIGR00615	Recombination protein RecR
+TIGR00631	UvrABC system protein B
+TIGR00634	DNA repair protein RecN
+TIGR00635	Holliday junction ATP-dependent DNA helicase RuvB
+TIGR00643	ATP-dependent DNA helicase homolog RECG, chloroplastic
+TIGR00663	Beta sliding clamp homolog GriR
+TIGR00717	30S ribosomal protein S1
+TIGR00755	Ribosomal RNA small subunit methyltransferase A
+TIGR00810	Protein-export membrane protein SecG
+TIGR00922	Transcription termination/antitermination protein NusG
+TIGR00928	Adenylosuccinate lyase
+TIGR00959	Signal recognition particle protein
+TIGR00963	Protein translocase subunit SecA 1
+TIGR00964	Protein translocase subunit SecE
+TIGR00967	Protein translocase subunit SecY
+TIGR01009	30S ribosomal protein S3, chloroplastic
+TIGR01011	30S ribosomal protein S2, chloroplastic
+TIGR01017	30S ribosomal protein S4, chloroplastic
+TIGR01021	30S ribosomal protein S5
+TIGR01029	30S ribosomal protein S7, chloroplastic
+TIGR01032	50S ribosomal protein L20, chloroplastic
+TIGR01039	ATP synthase subunit beta, chloroplastic
+TIGR01044	50S ribosomal protein L22, chloroplastic
+TIGR01059	DNA gyrase subunit B
+TIGR01063	DNA gyrase subunit A
+TIGR01066	50S ribosomal protein L13
+TIGR01071	50S ribosomal protein L15
+TIGR01079	50S ribosomal protein L24
+TIGR01082	UDP-N-acetylmuramate--L-alanine ligase
+TIGR01087	UDP-N-acetylmuramoylalanine--D-glutamate ligase
+TIGR01128	Uncharacterized protein aq_1104
+TIGR01146	ATP synthase gamma chain
+TIGR01164	50S ribosomal protein L16, chloroplastic
+TIGR01169	50S ribosomal protein L1
+TIGR01171	50S ribosomal protein L2-A, chloroplastic
+TIGR01302	Inosine-5'-monophosphate dehydrogenase 1
+TIGR01391	DNA primase
+TIGR01393	Elongation factor 4
+TIGR01394	Putative elongation factor TypA-like SVR3, chloroplastic
+TIGR01510	Phosphopantetheine adenylyltransferase
+TIGR01632	50S ribosomal protein L11
+TIGR01951	Transcription antitermination protein NusB
+TIGR01953	Transcription termination/antitermination protein NusA
+TIGR02012	Protein RecA
+TIGR02013	DNA-directed RNA polymerase subunit beta
+TIGR02027	DNA-directed RNA polymerase subunit alpha
+TIGR02075	Uridylate kinase
+TIGR02191	Ribonuclease 3
+TIGR02273	Ribosome maturation factor RimM
+TIGR02350	Chaperone protein DnaK
+TIGR02386	DNA-directed RNA polymerase subunit beta'
+TIGR02397	Protein STICHEL-like 1
+TIGR02432	tRNA(Ile)-lysidine synthase
+TIGR02729	GTPase Obg
+TIGR03263	Guanylate kinase
+TIGR03594	GTPase Der
+TIGR03625	50S ribosomal protein L3
+TIGR03632	30S ribosomal protein S11, chloroplastic
+TIGR03654	50S ribosomal protein L6
+TIGR03723	tRNA N6-adenosine threonylcarbamoyltransferase
+TIGR03725	tRNA threonylcarbamoyladenosine biosynthesis protein TsaB
+TIGR03953	50S ribosomal protein L4
