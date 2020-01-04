@@ -76,9 +76,9 @@ system( paste0('python Scripts/get_GTDB.py ', getwd(), '  PhyloAnalysisResult') 
 #####################        Sequences   Alignment        #####################
 muscle <-' ./Lib/muscle3.8.31_i86win32.exe -maxiters 2 -in PhyloAnalysisResult/'
 
-system( paste0(muscle, ' PhyloAnalysisResult/ribosomalProteins.aa.fasta ',
+system( paste0(muscle, 'ribosomalProteins.aa.fasta ',
                ' -out  PhyloAnalysisResult/ribosomalProteins.aa_align.fasta') )
-system( paste0(muscle, ' PhyloAnalysisResult/rpoB.aa.fasta ',
+system( paste0(muscle, 'rpoB.aa.fasta ',
                ' -out  PhyloAnalysisResult/rpoB.aa_align.fasta') )
 
 # summary UBCG
@@ -90,10 +90,12 @@ for (fn in UBCGfiles) {
   print(paste0('>>>>>>>>>>>>>>>> sequences alignment by Muscle ===============> ', fn) )
   fileHeader <- strsplit(fn, '.fasta')[[1]][1]
   system( paste0(muscle, fn, ' -out  PhyloAnalysisResult/', fileHeader, '_align.fasta') )
-  system( paste0('mv PhyloAnalysisResult/', fn,
-                 ' PhyloAnalysisResult/UBCGrawGeneSet/') )
-  system( paste0('mv PhyloAnalysisResult/', fileHeader, '_align.fasta',
-                 ' PhyloAnalysisResult/UBCGalignGeneSet/') )
+  file.copy(paste0('PhyloAnalysisResult/', fn), 
+            paste0('PhyloAnalysisResult/UBCGrawGeneSet/', fn))
+  file.copy(paste0('PhyloAnalysisResult/', fileHeader, '_align.fasta'), 
+            paste0('PhyloAnalysisResult/UBCGalignGeneSet/', fileHeader, '_align.fasta'))
+  unlink(paste0('PhyloAnalysisResult/', fn), recursive = T)
+  unlink(paste0('PhyloAnalysisResult/', fileHeader, '_align.fasta'), recursive = T)
 }
 
 # summary GTDB
@@ -105,10 +107,12 @@ for (fn in GTDBfiles) {
   print(paste0('>>>>>>>>>>>>>>>> sequences alignment by Muscle ===============> ', fn) )
   fileHeader <- strsplit(fn, '.fasta')[[1]][1]
   system( paste0(muscle, fn, ' -out  PhyloAnalysisResult/', fileHeader, '_align.fasta') )
-  system( paste0('mv PhyloAnalysisResult/', fn,
-                 ' PhyloAnalysisResult/GTDBrawGeneSet/') )
-  system( paste0('mv PhyloAnalysisResult/', fileHeader, '_align.fasta',
-                 ' PhyloAnalysisResult/GTDBalignGeneSet/') )
+  file.copy(paste0('PhyloAnalysisResult/', fn), 
+            paste0('PhyloAnalysisResult/UBCGrawGeneSet/', fn))
+  file.copy(paste0('PhyloAnalysisResult/', fileHeader, '_align.fasta'), 
+            paste0('PhyloAnalysisResult/GTDBalignGeneSet/', fileHeader, '_align.fasta'))
+  unlink(paste0('PhyloAnalysisResult/', fn), recursive = T)
+  unlink(paste0('PhyloAnalysisResult/', fileHeader, '_align.fasta'), recursive = T)
 }
 
 ###############################################################################
@@ -130,7 +134,22 @@ system( paste0(trim, 'PhyloAnalysisResult/GTDBalign.fasta -out PhyloAnalysisResu
 
 ###############################################################################
 dir.create('PhyloAnalysisResult/rawAlignFiles')
-system('mv PhyloAnalysisResult/rpoB.aa_align.fasta PhyloAnalysisResult/rawAlignFiles/')
-system('mv PhyloAnalysisResult/ribosomalProteins.aa_align.fasta PhyloAnalysisResult/rawAlignFiles/')
-system('mv PhyloAnalysisResult/UBCGalign.fasta PhyloAnalysisResult/rawAlignFiles/')
-system('mv PhyloAnalysisResult/GTDBalign.fasta PhyloAnalysisResult/rawAlignFiles/')
+file.copy('PhyloAnalysisResult/rpoB.aa_align.fasta', 
+          'PhyloAnalysisResult/rawAlignFiles/rpoB.aa_align.fasta')
+unlink('PhyloAnalysisResult/rpoB.aa_align.fasta', recursive = T)
+file.copy('PhyloAnalysisResult/ribosomalProteins.aa_align.fasta', 
+          'PhyloAnalysisResult/rawAlignFiles/ribosomalProteins.aa_align.fasta')
+unlink('PhyloAnalysisResult/ribosomalProteins.aa_align.fasta', recursive = T)
+file.copy('PhyloAnalysisResult/UBCGalign.fasta', 
+          'PhyloAnalysisResult/rawAlignFiles/UBCGalign.fasta')
+unlink('PhyloAnalysisResult/UBCGalign.fasta', recursive = T)
+file.copy('PhyloAnalysisResult/GTDBalign.fasta', 
+          'PhyloAnalysisResult/rawAlignFiles/GTDBalign.fasta')
+unlink('PhyloAnalysisResult/GTDBalign.fasta', recursive = T)
+file.copy('PhyloAnalysisResult/rpoB.aa.fasta', 
+          'PhyloAnalysisResult/rawAlignFiles/rpoB.aa.fasta')
+unlink('PhyloAnalysisResult/rpoB.aa.fasta', recursive = T)
+file.copy('PhyloAnalysisResult/ribosomalProteins.aa_align.fasta', 
+          'PhyloAnalysisResult/rawAlignFiles/ribosomalProteins.aa.fasta')
+unlink('PhyloAnalysisResult/ribosomalProteins.aa.fasta', recursive = T)
+

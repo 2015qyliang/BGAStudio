@@ -4,11 +4,12 @@ idCutoff <- 35 # the value could be reset
 queryCoverage <- 50 # 50 or 70
 
 diamondProcess <- c(
-  TRUE, # 1 - Uniprot -- TRUE or FALSE
-  TRUE, # 2 - OrthoMclOG5 -- TRUE or FALSE
-  TRUE, # 3 - COG -- TRUE or FALSE
-  TRUE, # 4 - CAZy -- TRUE or FALSE
-  TRUE # 5 - GTDB -- TRUE or FALSE
+  F, # 1 - Uniprot -- TRUE or FALSE
+  F, # 2 - OrthoMclOG5 -- TRUE or FALSE
+  F, # 3 - COG -- TRUE or FALSE
+  F, # 4 - CAZy -- TRUE or FALSE
+  F, # 5 - GTDB -- TRUE or FALSE
+  TRUE # 6 - AMRProt -- TRUE or FALSE (Antimicrobial Resistance Reference)
   )
 
 ###############################################################################
@@ -121,4 +122,25 @@ if (diamondProcess[5]) {
   }
 }
 
+###############################################################################
+if (diamondProcess[6]) {
+  
+  if (!dir.exists('10_ResultAMR')) {
+    dir.create('10_ResultAMR')
+  }
+  unlink("10_ResultAMR", recursive = TRUE)
+  dir.create('10_ResultAMR')
+  
+  dbtype <- "AMRProt"
+  for (fn in genomeFiles) {
+    fnHeader <- strsplit(fn, '.fasta')[[1]]
+    blast.comm1 <- paste0('./Lib/diamond.exe blastp -q 02_ProteinsFaa/', fn)
+    blast.comm2 <- paste0(' -d Database/', dbtype)
+    blast.comm3 <- paste0(' --max-target-seqs 1 -e 1e-8 --id ', idCutoff,
+                          ' -o 10_ResultAMR/', fnHeader, '.txt',
+                          ' --tmpdir 04_DiamondTmpDir/',
+                          ' --query-cover ', queryCoverage)
+    system(paste0(blast.comm1, blast.comm2, blast.comm3))
+  }
+}
 
